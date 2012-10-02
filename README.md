@@ -4,20 +4,18 @@
 
 I use homebrew.  It doesn't create this when you install Privoxy.
 
-## Useage
+## How?
 
-Copy the .plist file to
-
-```
-/Library/LaunchAgents
-or
-~/Library/LaunchAgents
-```
-
-Then, you can bring it up to see if it works with:
+Copy the contents of the .plist file to
 
 ```
-launchctl load ~/Library/LaunchAgents/com.kfring.privoxy.plist
+sudo vim /Library/LaunchDaemons/org.privoxy.plist
+```
+
+then:
+
+```
+sudo chown root:wheel org.privoxy.plist
 ```
 
 Upon reboot it *should* start.
