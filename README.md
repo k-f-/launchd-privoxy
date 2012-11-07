@@ -16,6 +16,6 @@ then:
 
 ```
 sudo chown root:wheel org.privoxy.plist
+launchctl load /Library/LaunchDaemons/org.privoxy.plist
+launchctl start org.privoxy.launchd.privoxy
 ```
-
-Upon reboot it *should* start.
