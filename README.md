@@ -1,3 +1,7 @@
+
+don't need this anymore now that homebrew's privoxy ships
+with a launchctl
+---------------------------------------------------------
 # Privoxy Launchctl
 
 ## Why?
